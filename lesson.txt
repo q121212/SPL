@@ -1,0 +1,43 @@
+*args
+globals()
+locals()
+
+lambda arg1, argx: expression
+map(func, sequence_of_variables_for_func)
+
+filter(labmda var: var_condition, sequence)
+or
+filter(None, sequence) # return truthly values
+
+zip(itarables_thing1, iterable_thingx)
+
+zip implementation through map:
+map(lambda i, j: (i, j), iterable_thing1,iterable_thing2)
+or in general case:
+map(lambda *args: args, iterable_thing1, iterable_thingx) 
+
+pep8 ./file
+autopep8 ./file
+
+
+func=decorator(func)
+
+or
+
+def decorator(func):
+  if not decorator.i:
+    decorator.i = 0 
+  else:
+    decorator.i+= 1
+  
+  return func
+
+@decorator
+def func():
+  return 1
+
+
+any()
+all()
+
+
