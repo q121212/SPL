@@ -41,3 +41,6 @@ any()
 all()
 
 
+a='asdfg'
+z=iter(a)
+next(z)
