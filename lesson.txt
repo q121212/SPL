@@ -44,3 +44,25 @@ all()
 a='asdfg'
 z=iter(a)
 next(z)
+
+
+
+import pickle 				# for dump & undumps data structures
+
+class M:
+  var = 1
+  var2 = 'temp'
+
+data=M()
+
+with open('filename', 'wb', 1000) as file: #  1000 - buffer
+  pickle.dump(data, file)				   # dump data to file
+
+
+with open('filename', 'rb', 1000) as file: #  1000 - buffer
+  extracted_data = pickle.load(file)	   # extract data from file
+
+# tell % seek in file
+with open('file', 'w') as f:
+	f.tell()					# identify current cursor position in the file
+	f.seek(10)					# find 10 position in the file
